@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Chatbot Ai With Speech Recognition Device Telegram Bot Cli
+GenericName=Chatbot Ai With Speech Recognition Device Telegram Bot Cli
+Version=0.0.0
+Exec=/opt/chatbot-ai-with-speech-recognition-device-telegram-bot-cli/chatbot_ai_with_speech_recognition_device_telegram_bot_cli
+Icon=/opt/chatbot-ai-with-speech-recognition-device-telegram-bot-cli/data/flutter_assets/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Music;Media;
+Keywords=Hello;World;Test;Application;
+StartupNotify=true

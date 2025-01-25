@@ -1,0 +1,10 @@
+Maintainer: "anonymous@noemail.com>"
+Package: chatbot-ai-with-speech-recognition-device-telegram-bot-cli
+Version: 0.0.0
+Section: x11
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 0
+Description: "-"
+Homepage: "-"
