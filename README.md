@@ -22,6 +22,13 @@
 
 Untuk menggunakan program ini secara cepat kamu perlu pergi ke folder [deploy/docker](deploy/docker) baca dan ikuti petunjuk
 
+
+## 👷 About Worker / Maintaner / Developer
+
+Program Ini di buat oleh [AegizTyreseValfredo](https://github.com/AegizTyreseValfredo) 100% tanpa copy paste milik orang lain. 
+
+Program ini 100% di generate menggunakan project experimental **General Ai** & **sudah lulus uji coba running berhasil berjalan tanpa hambatan**. Jika anda ingin melanjutkan project ini menjadi open source alangkah bagusnya kamu mencantumkan nama saya dan juga **General Corporation / Global Corporation** / Semua ini dan di bawah ini.
+
 <!-- START GLOBAL CORPORATION -->
 <h3 align="center">
   Global Corporation
