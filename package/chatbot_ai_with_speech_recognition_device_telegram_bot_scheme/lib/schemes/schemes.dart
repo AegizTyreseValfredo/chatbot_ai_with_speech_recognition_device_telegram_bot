@@ -38,13 +38,13 @@ List<Map> schemes = [
     "version": "0.0.0",
     "publish_to": "none",
     "homepage": "https://youtube.com/{youtube_owner_username}",
-    "repository": "https://github.com/{main_username_owner}/packagex.git",
+    "repository": "https://github.com/AegizTyreseValfredo/packagex.git",
     "issue_tracker":
-        "https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/issues",
+        "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/issues",
     "documentation":
-        "https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs",
+        "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs",
     "funding": [
-      "https://github.com/sponsors/{main_username_owner}",
+      "https://github.com/sponsors/AegizTyreseValfredo",
     ],
     "platforms": {
       "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBotPlatforms",

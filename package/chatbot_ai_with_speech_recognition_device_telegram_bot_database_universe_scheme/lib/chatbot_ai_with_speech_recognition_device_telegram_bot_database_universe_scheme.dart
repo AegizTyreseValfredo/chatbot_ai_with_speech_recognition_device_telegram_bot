@@ -35,7 +35,13 @@ Bukan maksud kami menipu itu karena harga yang sudah di kalkulasi + bantuan tiba
 /// More dartdocs go here.
 library;
 
-export 'src/chatbot_ai_with_speech_recognition_device_telegram_bot_database_universe_scheme_base.dart';
+import 'package:chatbot_ai_with_speech_recognition_device_telegram_bot_database_universe_scheme/database/scheme/chatbot_data_local_database.dart';
+import 'package:database_universe/database_universe.dart';
 
-// TODO: Export any libraries intended for clients of this package.
-
+///
+class ChatbotAiWithSpeechRecognitionDeviceTelegramBotDatabaseUniverseScheme {
+  ///
+  static final List<DatabaseUniverseGeneratedSchema> schemas = [
+    ChatbotDataLocalDatabaseSchema,
+  ];
+}

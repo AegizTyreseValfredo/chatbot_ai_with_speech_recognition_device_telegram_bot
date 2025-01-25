@@ -1,49 +1,49 @@
-/* <!-- START LICENSE -->
-
-
-Program Ini Di buat Oleh DEVELOPER Dari PERUSAHAAN GLOBAL CORPORATION 
-Social Media: 
-
-- Youtube: https://youtube.com/@Global_Corporation 
-- Github: https://github.com/globalcorporation
-- TELEGRAM: https://t.me/GLOBAL_CORP_ORG_BOT
-
-Seluruh kode disini di buat 100% murni tanpa jiplak / mencuri kode lain jika ada akan ada link komment di baris code
-
-Jika anda mau mengedit pastikan kredit ini tidak di hapus / di ganti!
-
-Jika Program ini milik anda dari hasil beli jasa developer di (Global Corporation / apapun itu dari turunan itu jika ada kesalahan / bug / ingin update segera lapor ke sub)
-
-Misal anda beli Beli source code di Slebew CORPORATION anda lapor dahulu di slebew jangan lapor di GLOBAL CORPORATION!
-
-Jika ada kendala program ini (Pastikan sebelum deal project tidak ada negosiasi harga)
-Karena jika ada negosiasi harga kemungkinan
-
-1. Software Ada yang di kurangin
-2. Informasi tidak lengkap
-3. Bantuan Tidak Bisa remote / full time (Ada jeda)
-
-Sebelum program ini sampai ke pembeli developer kami sudah melakukan testing
-
-jadi sebelum nego kami sudah melakukan berbagai konsekuensi jika nego tidak sesuai ? 
-Bukan maksud kami menipu itu karena harga yang sudah di kalkulasi + bantuan tiba tiba di potong akhirnya bantuan / software kadang tidak lengkap
-
-
-<!-- END LICENSE --> */
 // ignore_for_file: non_constant_identifier_names, unused_import
 import "package:general_lib/general_lib.dart";
 // import "dart:convert";
 
-class WhisperResponse extends JsonScheme {
-  WhisperResponse(super.rawData);
 
+/// Generated 
+class WhisperResponse extends JsonScheme {
+
+  /// Generated
+  WhisperResponse(super.rawData);
+  
+  /// return default data
+  /// 
   static Map get defaultData {
-    return {"@type": "whisperResponse", "text": "", "message": ""};
+    return {"@type":"whisperResponse","text":"","message":""};
   }
 
+  /// check data 
+  /// if raw data 
+  /// - rawData["@type"] == whisperResponse
+  /// if same return true
+  bool json_scheme_utils_checkDataIsSameBySpecialType() {
+    return rawData["@type"] == defaultData["@type"];
+  }
+
+  /// check value data whatever do yout want
+  bool json_scheme_utils_checkDataIsSameBuilder({
+    required bool Function(Map rawData, Map defaultData) onResult,
+  }) {
+    return onResult(rawData["@type"], defaultData["@type"]);
+  }
+
+  
+
+  /// create [WhisperResponse]
+  /// Empty  
+  static WhisperResponse empty() {
+    return WhisperResponse({});
+  }
+
+  
+
+  /// Generated
   String? get special_type {
     try {
-      if (rawData["@type"] is String == false) {
+      if (rawData["@type"] is String == false){
         return null;
       }
       return rawData["@type"] as String;
@@ -52,13 +52,16 @@ class WhisperResponse extends JsonScheme {
     }
   }
 
+  /// Generated
   set special_type(String? value) {
     rawData["@type"] = value;
   }
 
+
+  /// Generated
   String? get text {
     try {
-      if (rawData["text"] is String == false) {
+      if (rawData["text"] is String == false){
         return null;
       }
       return rawData["text"] as String;
@@ -67,13 +70,16 @@ class WhisperResponse extends JsonScheme {
     }
   }
 
+  /// Generated
   set text(String? value) {
     rawData["text"] = value;
   }
 
+
+  /// Generated
   String? get message {
     try {
-      if (rawData["message"] is String == false) {
+      if (rawData["message"] is String == false){
         return null;
       }
       return rawData["message"] as String;
@@ -82,27 +88,42 @@ class WhisperResponse extends JsonScheme {
     }
   }
 
+  /// Generated
   set message(String? value) {
     rawData["message"] = value;
   }
 
+
+  /// Generated
   static WhisperResponse create({
+              bool schemeUtilsIsSetDefaultData = false,
+
     String special_type = "whisperResponse",
     String? text,
     String? message,
-  }) {
+})  {
     // WhisperResponse whisperResponse = WhisperResponse({
-    Map whisperResponse_data_create_json = {
+final Map whisperResponse_data_create_json = {
+  
       "@type": special_type,
       "text": text,
       "message": message,
-    };
 
-    whisperResponse_data_create_json.removeWhere((key, value) => value == null);
-    WhisperResponse whisperResponse_data_create =
-        WhisperResponse(whisperResponse_data_create_json);
 
-    return whisperResponse_data_create;
-  }
+};
+
+
+          whisperResponse_data_create_json.removeWhere((key, value) => value == null);
+
+    if (schemeUtilsIsSetDefaultData) {
+      defaultData.forEach((key, value) {
+        if (whisperResponse_data_create_json.containsKey(key) == false) {
+          whisperResponse_data_create_json[key] = value;
+        }
+      });
+    }
+return WhisperResponse(whisperResponse_data_create_json);
+
+
+      }
 }
-

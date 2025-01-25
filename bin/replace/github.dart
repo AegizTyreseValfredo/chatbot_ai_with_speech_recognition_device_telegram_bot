@@ -74,8 +74,8 @@ void main(List<String> args) async {
 
 git init
 git branch -M main
-git remote add origin https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot
-git remote set-url --push origin https://{main_username_owner}:{main_github_token}@github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot
+git remote add origin https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot
+git remote set-url --push origin https://AegizTyreseValfredo:{main_github_token}@github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot
 
 echo \$(date) > date.lock
 git add date.lock

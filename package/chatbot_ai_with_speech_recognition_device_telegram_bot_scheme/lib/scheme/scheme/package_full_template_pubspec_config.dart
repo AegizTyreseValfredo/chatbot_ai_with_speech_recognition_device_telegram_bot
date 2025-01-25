@@ -4,20 +4,20 @@ import "package:general_lib/general_lib.dart";
 
 
 /// Generated 
-class Error extends JsonScheme {
+class PackageFullTemplatePubspecConfig extends JsonScheme {
 
   /// Generated
-  Error(super.rawData);
+  PackageFullTemplatePubspecConfig(super.rawData);
   
   /// return default data
   /// 
   static Map get defaultData {
-    return {"@type":"error","message":""};
+    return {"@type":"packageFullTemplatePubspecConfig"};
   }
 
   /// check data 
   /// if raw data 
-  /// - rawData["@type"] == error
+  /// - rawData["@type"] == packageFullTemplatePubspecConfig
   /// if same return true
   bool json_scheme_utils_checkDataIsSameBySpecialType() {
     return rawData["@type"] == defaultData["@type"];
@@ -32,10 +32,10 @@ class Error extends JsonScheme {
 
   
 
-  /// create [Error]
+  /// create [PackageFullTemplatePubspecConfig]
   /// Empty  
-  static Error empty() {
-    return Error({});
+  static PackageFullTemplatePubspecConfig empty() {
+    return PackageFullTemplatePubspecConfig({});
   }
 
   
@@ -59,50 +59,30 @@ class Error extends JsonScheme {
 
 
   /// Generated
-  String? get message {
-    try {
-      if (rawData["message"] is String == false){
-        return null;
-      }
-      return rawData["message"] as String;
-    } catch (e) {
-      return null;
-    }
-  }
-
-  /// Generated
-  set message(String? value) {
-    rawData["message"] = value;
-  }
-
-
-  /// Generated
-  static Error create({
+  static PackageFullTemplatePubspecConfig create({
               bool schemeUtilsIsSetDefaultData = false,
 
-    String special_type = "error",
-    String? message,
+    String special_type = "packageFullTemplatePubspecConfig",
 })  {
-    // Error error = Error({
-final Map error_data_create_json = {
+    // PackageFullTemplatePubspecConfig packageFullTemplatePubspecConfig = PackageFullTemplatePubspecConfig({
+final Map packageFullTemplatePubspecConfig_data_create_json = {
   
       "@type": special_type,
-      "message": message,
 
 
 };
 
 
-          error_data_create_json.removeWhere((key, value) => value == null);
+          packageFullTemplatePubspecConfig_data_create_json.removeWhere((key, value) => value == null);
 
     if (schemeUtilsIsSetDefaultData) {
       defaultData.forEach((key, value) {
-        if (error_data_create_json.containsKey(key) == false) {
-          error_data_create_json[key] = value;
+        if (packageFullTemplatePubspecConfig_data_create_json.containsKey(key) == false) {
+          packageFullTemplatePubspecConfig_data_create_json[key] = value;
         }
       });
     }
-return Error(error_data_create_json);
+return PackageFullTemplatePubspecConfig(packageFullTemplatePubspecConfig_data_create_json);
 
 
       }

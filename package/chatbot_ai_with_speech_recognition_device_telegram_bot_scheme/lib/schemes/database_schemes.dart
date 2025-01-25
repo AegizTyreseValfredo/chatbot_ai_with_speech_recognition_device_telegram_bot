@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names, public_member_api_docs
+
 /* <!-- START LICENSE -->
 
 
@@ -30,10 +32,15 @@ Bukan maksud kami menipu itu karena harga yang sudah di kalkulasi + bantuan tiba
 
 
 <!-- END LICENSE --> */
-// TODO: Put public facing types in this file.
+import 'package:general_lib/general_lib.dart';
 
-/// Checks if you are awesome. Spoiler: you are.
-class Awesome {
-  bool get isAwesome => true;
-}
-
+List<Map<String, dynamic>> database_schemes = () {
+  final GeneralLibSchemeType generalLibSchemeType = GeneralLibSchemeType.local;
+  return [
+    {
+      "@type": "chatbotData${generalLibSchemeType.toSpesialType()}",
+      "prompt": "",
+      "respond": "",
+    },
+  ];
+}();

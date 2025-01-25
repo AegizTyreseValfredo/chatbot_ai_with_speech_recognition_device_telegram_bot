@@ -56,13 +56,13 @@ Future<void> pubspecUpdate({
           "chatbot_ai_with_speech_recognition_device_telegram_bot is program for help you, booster up your projects significants",
       "version": version_package,
       "repository":
-          "https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot",
+          "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot",
       "homepage":
-          "https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot",
+          "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot",
       "issue_tracker":
-          "https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/issues",
+          "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/issues",
       "documentation":
-          "https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs",
+          "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs",
       "platforms": {
         "android": null,
         "ios": null,
