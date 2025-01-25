@@ -1,0 +1,7 @@
+# melos_managed_dependency_overrides: edge_dart_runtime
+dependency_overrides:
+  chatbot_ai_with_speech_recognition_device_telegram_bot:
+    path: ../chatbot_ai_with_speech_recognition_device_telegram_bot
+  chatbot_ai_with_speech_recognition_device_telegram_bot_scheme:
+    path: ../chatbot_ai_with_speech_recognition_device_telegram_bot_scheme
+

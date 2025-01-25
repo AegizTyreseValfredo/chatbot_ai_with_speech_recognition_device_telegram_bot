@@ -1,0 +1,29 @@
+name: 'chatbot_ai_with_speech_recognition_device_telegram_bot_cli'
+description: 'chatbot_ai_with_speech_recognition_device_telegram_bot is program for help you, booster up your projects significants'
+version: '0.0.0'
+homepage: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot'
+repository: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot'
+issue_tracker: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/issues'
+documentation: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs'
+funding:
+  - 'https://github.com/sponsors/{main_username_owner}'
+  - 'https://github.com/sponsors/{main_username_owner}'
+  - 'https://github.com/sponsors/azkadev'
+  - 'https://github.com/sponsors/generalfoss'
+platforms:
+  android: null
+  ios: null
+  linux: null
+  macos: null
+  web: null
+  windows: null
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+dev_dependencies:
+  lints: '^5.0.0'
+  test: 'any'
+dependency_overrides:
+  pointycastle: '3.8.0'
+  mime: '^2.0.0'
+dependencies: {}
+
