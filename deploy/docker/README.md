@@ -1,4 +1,16 @@
-# Slebew
+# Chatbot Ai Deploy With Docker
+
+Untuk menjalankan program ini pastikan kamu sudah menginstall [docker](https://docker.com/)
+
+Copy pasted command di bawah di terminal dan pastikan sudah membuka folder ini
+
+```bash
+sudo docker build -t chatbot-ai-with-speech-recognition-device-telegram-bot .
+```
+
+```bash
+sudo docker run -d -e telegram_bot_token="token_bot_from_bot_father" --restart always --name chatbot-ai-with-speech-recognition-device-telegram-bot -v $(pwd):/app chatbot-ai-with-speech-recognition-device-telegram-bot
+```
 
 <!-- START GLOBAL CORPORATION -->
 <h3 align="center">
