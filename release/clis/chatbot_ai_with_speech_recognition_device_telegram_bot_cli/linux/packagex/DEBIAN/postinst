@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 ln --force -s /opt/chatbot-ai-with-speech-recognition-device-telegram-bot-cli/chatbot_ai_with_speech_recognition_device_telegram_bot_cli /usr/bin/chatbot-ai-with-speech-recognition-device-telegram-bot-cli-app
 chmod +x /usr/bin/chatbot-ai-with-speech-recognition-device-telegram-bot-cli-app
+
 exit 0

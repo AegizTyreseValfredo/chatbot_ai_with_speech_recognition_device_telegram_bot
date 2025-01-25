@@ -33,16 +33,10 @@ packagex:
     - '--save-debugging-info=packagex-compile-debug'
   uploads:
     - platform_type: 'github'
-      github_username: 'archivon-apps-stores'
+      github_username: 'AegizTyreseValfredo'
       github_tag: 'release'
       github_is_org: false
-      github_repository_name: 'chatbot_ai_with_speech_recognition_device_telegram_bot_cli'
-    - platform_type: 'supabase'
-      supabase_folder_name: 'release'
-    - platform_type: 'telegram'
-      telegram_chats:
-        - chat_id: '@slebew'
-          message_thread_id: ''
+      github_repository_name: 'chatbot_ai_with_speech_recognition_device_telegram_bot'
   packages:
     - dart_target: 'chatbot_ai_with_speech_recognition_device_telegram_bot_cli'
       flutter_target: 'main'
