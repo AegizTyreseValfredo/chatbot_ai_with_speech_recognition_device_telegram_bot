@@ -1,7 +1,7 @@
 name: 'chatbot_ai_with_speech_recognition_device_telegram_bot_assets_flutter'
 description: 'chatbot_ai_with_speech_recognition_device_telegram_bot is program for help you, booster up your projects significants'
 version: '0.0.0'
-homepage: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot'
+homepage: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot'
 environment:
   sdk: '>=3.6.0 <4.0.0'
   flutter: '>=1.17.0'
@@ -13,13 +13,13 @@ dev_dependencies:
     sdk: 'flutter'
   flutter_lints: '^5.0.0'
 flutter: null
-repository: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot'
-issue_tracker: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/issues'
-documentation: 'https://github.com/{main_username_owner}/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs'
+repository: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot'
+issue_tracker: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/issues'
+documentation: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs'
 funding:
-  - 'https://github.com/sponsors/{main_username_owner}'
-  - 'https://github.com/sponsors/{main_username_owner}'
-  - 'https://github.com/sponsors/azkadev'
+  - 'https://github.com/sponsors/AegizTyreseValfredo'
+  - 'https://github.com/sponsors/AegizTyreseValfredo'
+  - 'https://github.com/sponsors/AegizTyreseValfredo'
   - 'https://github.com/sponsors/generalfoss'
 platforms:
   android: null

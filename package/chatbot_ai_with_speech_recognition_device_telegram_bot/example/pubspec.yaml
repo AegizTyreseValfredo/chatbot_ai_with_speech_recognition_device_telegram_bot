@@ -23,10 +23,10 @@ dependency_overrides:
   pointycastle: '3.8.0'
   mime: '^2.0.0'
 funding:
-  - 'https://github.com/sponsors/azkadev'
+  - 'https://github.com/sponsors/AegizTyreseValfredo'
   - 'https://github.com/sponsors/generalfoss'
-homepage: 'https://youtube.com/@azkadev'
-repository: 'https://github.com/azkadev/general_framework'
+homepage: 'https://youtube.com/@AegizTyreseValfredo'
+repository: 'https://github.com/AegizTyreseValfredo/general_framework'
 issue_tracker: 'https://t.me/DEVELOPER_GLOBAL_PUBLIC'
-documentation: 'https://youtube.com/@azkadev'
+documentation: 'https://youtube.com/@AegizTyreseValfredo'
 
