@@ -1,0 +1,4 @@
+[submodule "whisper"]
+	path = whisper
+	url = https://github.com/AegizTyreseValfredo/whisper.git
+	branch = old
