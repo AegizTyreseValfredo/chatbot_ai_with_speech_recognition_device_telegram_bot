@@ -7,9 +7,9 @@
 
 ## 📚️ Docs
 
-1. [Documentation]({url_documentation})
+1. [Documentation](https://t.me/DEVELOPER_GLOBAL_PUBLIC)
 2. [Youtube](https://youtube.com/{main_youtube_username_owner})
-3. [Telegram Support Group](https://t.me/{telegram_support_username})
+3. [Telegram Support Group](https://t.me/DEVELOPER_GLOBAL_PUBLIC)
 4. [Contact Developer](https://github.com/AegizTyreseValfredo) (check social media or readme profile github)
 
 ## 🔖️ Features
