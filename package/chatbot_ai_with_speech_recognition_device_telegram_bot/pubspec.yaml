@@ -5,6 +5,7 @@ homepage: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recogni
 repository: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot'
 issue_tracker: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/issues'
 documentation: 'https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs'
+publish_to: 'none'
 funding:
   - 'https://github.com/sponsors/AegizTyreseValfredo'
   - 'https://github.com/sponsors/AegizTyreseValfredo'
@@ -23,7 +24,16 @@ dependencies:
   general_lib: '^0.0.62'
   path: '^1.9.0'
   collection: '^1.19.0'
-  yaml: '^3.1.3'
+  general_framework: '^0.0.18'
+  server_universe: '^0.0.36'
+  telegram_client: '^0.8.37'
+  packagex: '^0.0.85'
+  chatbot_ai_with_speech_recognition_device_telegram_bot_scheme:
+    path: '../chatbot_ai_with_speech_recognition_device_telegram_bot_scheme'
+  chatbot_ai_with_speech_recognition_device_telegram_bot_database:
+    path: '../chatbot_ai_with_speech_recognition_device_telegram_bot_database'
+  whisper_dart:
+    path: ../../whisper
 dev_dependencies:
   lints: '^5.0.0'
   test: 'any'

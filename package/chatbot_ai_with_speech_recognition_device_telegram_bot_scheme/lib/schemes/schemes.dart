@@ -32,54 +32,12 @@ Bukan maksud kami menipu itu karena harga yang sudah di kalkulasi + bantuan tiba
 <!-- END LICENSE --> */
 List<Map> schemes = [
   {
-    "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBot",
-    "name": "example",
-    "description": "A sample command-line application.",
-    "version": "0.0.0",
-    "publish_to": "none",
-    "homepage": "https://youtube.com/{youtube_owner_username}",
-    "repository": "https://github.com/AegizTyreseValfredo/packagex.git",
-    "issue_tracker":
-        "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/issues",
-    "documentation":
-        "https://github.com/AegizTyreseValfredo/chatbot_ai_with_speech_recognition_device_telegram_bot/tree/main/docs",
-    "funding": [
-      "https://github.com/sponsors/AegizTyreseValfredo",
-    ],
-    "platforms": {
-      "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBotPlatforms",
-      "android": null,
-      "ios": null,
-      "linux": null,
-      "macos": null,
-      "web": null,
-      "windows": null,
-    },
-    "environment": {
-      "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBotEnvironment",
-      "sdk": ">=2.18.5 <3.0.0",
-    },
-    "dependencies": {
-      "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBotDependencies",
-      "flutter": {
-        "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBotDependenciesExtra",
-        "sdk": "flutter",
-      },
-      "cupertino_icons": "^1.0.2"
-    },
-    "dev_dependencies": {
-      "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBotDevDependencies",
-      "lints": "^2.0.0",
-      "test": "^1.16.0",
-      "packagex": {
-        "@type": "pubspecChatbotAiWithSpeechRecognitionDeviceTelegramBotDevDependenciesExtra",
-        "path": "../",
-      },
-      "msix": "^1.0.6"
-    },
-    "chatbot_ai_with_speech_recognition_device_telegram_bot": {
-      "@type": "packageFullTemplatePubspecConfig",
-    },
+    "@type": "chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration",
+    "telegram_api_id": 0,
+    "telegram_api_hash": "",
+    "telegram_bot_token": "",
+    "telegram_bot_user_id": 0,
+    "telegram_owner_user_id": 0,
+    "whisper_model_file_path": "",
   },
 ];
-

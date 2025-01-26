@@ -1,12 +1,13 @@
 name: 'chatbot_ai_with_speech_recognition_device_telegram_bot_database'
 description: 'chatbot_ai_with_speech_recognition_device_telegram_bot is program for help you, booster up your projects significants'
 version: '0.0.0'
-publish_to: none
+publish_to: 'none'
 environment:
   sdk: '>=3.6.0 <4.0.0'
 dependencies:
   path: '^1.9.0'
   general_lib: '^0.0.62'
+  database_universe: '^1.0.5'
   chatbot_ai_with_speech_recognition_device_telegram_bot_database_universe_scheme:
     path: '../chatbot_ai_with_speech_recognition_device_telegram_bot_database_universe_scheme'
   chatbot_ai_with_speech_recognition_device_telegram_bot_scheme:
@@ -14,6 +15,7 @@ dependencies:
 dev_dependencies:
   lints: '^5.0.0'
   test: 'any'
+  build_runner: 'any'
 dependency_overrides:
   pointycastle: '3.8.0'
   mime: '^2.0.0'

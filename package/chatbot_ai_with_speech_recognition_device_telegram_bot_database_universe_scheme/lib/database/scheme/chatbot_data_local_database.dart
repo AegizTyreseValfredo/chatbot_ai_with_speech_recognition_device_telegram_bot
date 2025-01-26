@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names, unnecessary_this
+// ignore_for_file: non_constant_identifier_names, unnecessary_this, public_member_api_docs
 
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
