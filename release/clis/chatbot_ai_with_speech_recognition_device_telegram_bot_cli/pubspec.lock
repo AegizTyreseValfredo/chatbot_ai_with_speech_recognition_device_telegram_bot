@@ -172,7 +172,7 @@ packages:
     source: path
     version: "0.0.0"
   chatbot_ai_with_speech_recognition_device_telegram_bot_scheme:
-    dependency: transitive
+    dependency: "direct main"
     description:
       path: "../../../package/chatbot_ai_with_speech_recognition_device_telegram_bot_scheme"
       relative: true
@@ -413,7 +413,7 @@ packages:
     source: hosted
     version: "0.0.18"
   general_lib:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: general_lib
       sha256: "95110c39e1cf3185c5f1eb27f4e7c39e95f3c62645e5b1e4438da6ed2f0a8ede"
@@ -1433,6 +1433,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.1"
+  whisper_dart:
+    dependency: transitive
+    description:
+      path: "../../../whisper"
+      relative: true
+    source: path
+    version: "0.0.3"
   win32:
     dependency: transitive
     description:
