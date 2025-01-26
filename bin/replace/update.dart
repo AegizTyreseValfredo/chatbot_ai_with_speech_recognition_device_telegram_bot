@@ -42,6 +42,9 @@ import "package:path/path.dart" as path;
 import "package:yaml/yaml.dart" as yaml;
 
 String version_package = "0.0.0";
+String change_log_package = """
+
+""";
 Future<void> pubspecUpdate({
   required File filePubspec,
   required List<String> librarys,
@@ -76,6 +79,7 @@ Future<void> pubspecUpdate({
     yaml_code_clone.removeByKeys([
       "publish_to",
     ]);
+    yaml_code_clone["change_log"] = change_log_package;
     var yamlDoc = YamlWriterGeneralLib().write(yaml_code_clone);
     await filePubspec.writeAsString(yamlDoc);
   }
