@@ -42,6 +42,8 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
     database.ensureInitialized(
       currentPath: currentPath,
     );
+
+    /// telegram
     {
       telegramClient.ensureInitialized(
         telegramClientTdlibOption: TelegramClientTdlibOption(
@@ -56,6 +58,13 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
       );
       await telegramClient.tdlib.ensureInitialized();
     }
+
+    /// whisper
+    {
+      whisper.ensureInitialized();
+    }
     _isInitialized = true;
   }
+
+  
 }

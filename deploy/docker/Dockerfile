@@ -8,6 +8,8 @@ RUN apt-get update
 
 RUN apt-get install -y sudo wget
 
+RUN apt-get install -y ffmpeg
+
 # Download Models Small
 # Di karenakan ini program public / gratis maka hanya support model yang lama
 # pastikan ram device kamu minimal 1gb ya
