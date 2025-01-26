@@ -1,15 +1,12 @@
 import 'dart:async';
 
 import 'package:chatbot_ai_with_speech_recognition_device_telegram_bot_database/database/core.dart';
-import 'package:server_universe/native/native.dart';
+import 'package:telegram_client/scheme/telegram_client_library_tdlib_option_parameter.dart';
 import 'package:telegram_client/telegram_client.dart';
- import 'package:whisper_dart/whisper_dart.dart';
+import 'package:whisper_dart/whisper_dart.dart';
 
 ///
 class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
-  ///
-  final ServerUniverseNative serverUniverse;
-
   ///
   final ChatbotAiWithSpeechRecognitionDeviceTelegramBotDatabase database;
 
@@ -22,7 +19,6 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
 
   ///
   ChatbotAiWithSpeechRecognitionDeviceTelegramBot({
-    required this.serverUniverse,
     required this.telegramClient,
     required this.database,
     Whisper? whisper,
@@ -46,6 +42,20 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
     database.ensureInitialized(
       currentPath: currentPath,
     );
+    {
+      telegramClient.ensureInitialized(
+        telegramClientTdlibOption: TelegramClientTdlibOption(
+          clientOption: TelegramClientLibraryTdlibOptionParameter.create(
+            api_hash: database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_api_hash,
+            api_id: database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_api_id,
+            enable_storage_optimizer: true,
+            database_directory: database.directory_telegram_tdlib.path,
+            files_directory: database.directory_telegram_tdlib.path,
+          ),
+        ),
+      );
+      await telegramClient.tdlib.ensureInitialized();
+    }
     _isInitialized = true;
   }
 }

@@ -45,6 +45,16 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBotDatabase {
       );
     }
     _isInitialized = true;
+    await generalLibraryLog.printToTerminal(
+      logMessage: GeneralLibraryLogMessage(
+        value: "Database Initialized",
+        isForcePrint: false,
+        stackTrace: StackTrace.current,
+        isFullDetail: false,
+        logMessageType: GeneralLibraryLogMessageType.succes,
+        logOptions: null,
+      ),
+    );
   }
 
   int local_size_total() {
@@ -84,11 +94,23 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBotDatabase {
     return directory;
   }
 
+  Directory get directory_telegram_tdlib {
+    final Directory directory = Directory(path.join(currentPath, "chatbot_ai_telegram_tdlib"));
+    if (Dart.isWeb) {
+      return directory;
+    }
+    if (directory.existsSync() == false) {
+      directory.createSync(recursive: true);
+    }
+    return directory;
+  }
+
   void ensureInitializedDatabase() {
     {
       directory_database;
       directory_files;
       directory_temp;
+      directory_telegram_tdlib;
     }
   }
 

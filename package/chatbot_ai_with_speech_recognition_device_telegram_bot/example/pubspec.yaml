@@ -1,31 +1,21 @@
-name: 'example'
-description: 'A new Flutter project.'
-publish_to: 'none'
-version: '1.0.0+1'
+name: example
+description: A sample command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+publish_to: none
 environment:
-  sdk: '>=3.6.0 <4.0.0'
+  sdk: ^3.6.0
+
+# Add regular dependencies here.
 dependencies:
-  flutter:
-    sdk: 'flutter'
-  cupertino_icons: '^1.0.8'
-  general_lib: '^0.0.62'
-  general_lib_flutter: '^0.0.41'
-  general_framework: '^0.0.18'
+  path: ^1.9.0
   chatbot_ai_with_speech_recognition_device_telegram_bot:
     path: '../'
+  chatbot_ai_with_speech_recognition_device_telegram_bot_scheme:
+    path: '../../chatbot_ai_with_speech_recognition_device_telegram_bot_scheme'
+  chatbot_ai_with_speech_recognition_device_telegram_bot_database:
+    path: '../../chatbot_ai_with_speech_recognition_device_telegram_bot_database'
+
 dev_dependencies:
-  flutter_test:
-    sdk: 'flutter'
-  flutter_lints: '^5.0.0'
-flutter:
-  uses-material-design: true
-dependency_overrides:
-  pointycastle: '3.8.0'
-  mime: '^2.0.0'
-funding:
-  - 'https://github.com/sponsors/AegizTyreseValfredo'
-  - 'https://github.com/sponsors/generalfoss'
-homepage: 'https://youtube.com/@AegizTyreseValfredo'
-repository: 'https://github.com/AegizTyreseValfredo/general_framework'
-issue_tracker: 'https://t.me/DEVELOPER_GLOBAL_PUBLIC'
-documentation: 'https://youtube.com/@AegizTyreseValfredo'
+  lints: ^5.0.0
+  test: ^1.24.0

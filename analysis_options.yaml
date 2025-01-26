@@ -4,6 +4,8 @@ analyzer:
     - test
     - dev
     - templates
+    - whisper
+    - native_lib
 linter:
   rules:
     - public_member_api_docs

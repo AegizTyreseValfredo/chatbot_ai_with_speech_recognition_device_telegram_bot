@@ -12,7 +12,7 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration extends JsonS
   /// return default data
   /// 
   static Map get defaultData {
-    return {"@type":"chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration","telegram_api_id":0,"telegram_api_hash":"","telegram_bot_token":"","whisper_model_file_path":""};
+    return {"@type":"chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration","telegram_api_id":0,"telegram_api_hash":"","telegram_bot_token":"","telegram_bot_user_id":0,"telegram_owner_user_id":0,"whisper_model_file_path":""};
   }
 
   /// check data 
@@ -113,6 +113,42 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration extends JsonS
 
 
   /// Generated
+  num? get telegram_bot_user_id {
+    try {
+      if (rawData["telegram_bot_user_id"] is num == false){
+        return null;
+      }
+      return rawData["telegram_bot_user_id"] as num;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /// Generated
+  set telegram_bot_user_id(num? value) {
+    rawData["telegram_bot_user_id"] = value;
+  }
+
+
+  /// Generated
+  num? get telegram_owner_user_id {
+    try {
+      if (rawData["telegram_owner_user_id"] is num == false){
+        return null;
+      }
+      return rawData["telegram_owner_user_id"] as num;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /// Generated
+  set telegram_owner_user_id(num? value) {
+    rawData["telegram_owner_user_id"] = value;
+  }
+
+
+  /// Generated
   String? get whisper_model_file_path {
     try {
       if (rawData["whisper_model_file_path"] is String == false){
@@ -138,6 +174,8 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration extends JsonS
     num? telegram_api_id,
     String? telegram_api_hash,
     String? telegram_bot_token,
+    num? telegram_bot_user_id,
+    num? telegram_owner_user_id,
     String? whisper_model_file_path,
 })  {
     // ChatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration = ChatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration({
@@ -147,6 +185,8 @@ final Map chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration_data_crea
       "telegram_api_id": telegram_api_id,
       "telegram_api_hash": telegram_api_hash,
       "telegram_bot_token": telegram_bot_token,
+      "telegram_bot_user_id": telegram_bot_user_id,
+      "telegram_owner_user_id": telegram_owner_user_id,
       "whisper_model_file_path": whisper_model_file_path,
 
 
