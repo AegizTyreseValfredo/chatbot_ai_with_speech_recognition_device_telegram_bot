@@ -1,3 +1,5 @@
+// ignore_for_file: public_member_api_docs, empty_catches
+
 import 'dart:async';
 import 'dart:io';
 
@@ -64,24 +66,6 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
         ),
       );
       await telegramClient.tdlib.ensureInitialized();
-      {
-        final int telegramTdlibClientId = telegramClient.tdlib.td_create_client_id();
-        final TelegramClientLibraryTdlibOptionParameter tdlibOptionParameter = TelegramClientLibraryTdlibOptionParameter.create();
-        tdlibOptionParameter.client_telegram_bot_token = database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_bot_token;
-        tdlibOptionParameter.client_telegram_bot_user_id = database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_bot_user_id;
-        tdlibOptionParameter.client_telegram_owner_user_id = database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_owner_user_id;
-
-        final Directory directoryTdlibClient = Directory(path.join(database.directory_telegram_tdlib.path, "bot_${database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_bot_user_id}"));
-        if (directoryTdlibClient.existsSync() == false) {
-          directoryTdlibClient.createSync(recursive: true);
-        }
-        tdlibOptionParameter.files_directory = directoryTdlibClient.path;
-        tdlibOptionParameter.database_directory = directoryTdlibClient.path;
-        await telegramClient.tdlib.createclient(
-          clientId: telegramTdlibClientId,
-          clientOption: tdlibOptionParameter,
-        );
-      }
 
       telegramClient.on(
         event_name: telegramClient.event_invoke,
@@ -122,28 +106,7 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
       telegramClient.on(
         event_name: telegramClient.event_update,
         onUpdate: (updateTelegramClient) async {
-          await telegramClient.autoSetData(updateTelegramClient);
-
-          if (updateTelegramClient.client_option["is_login_bot"] == true) {
-            if (updateTelegramClient.telegramClientData.telegramClientType == TelegramClientType.tdlib) {
-              final Map updateRaw = updateTelegramClient.rawData;
-              if (updateRaw["@type"] == "updateAuthorizationState") {
-                if (updateRaw["authorization_state"] is Map) {
-                  final Map authorizationState = updateRaw["authorization_state"];
-
-                  if (authorizationState["@type"] == "authorizationStateWaitPhoneNumber") {
-                    await telegramClient.invoke(
-                      parameters: {
-                        "@type": "checkAuthenticationBotToken",
-                        "token": updateTelegramClient.client_option["client_token"],
-                      },
-                      telegramClientData: updateTelegramClient.telegramClientData,
-                    );
-                  }
-                }
-              }
-            }
-          }
+           await telegramClient.autoSetData(updateTelegramClient);
 
           try {
             /// check is bot api or tdlib as bot api
@@ -164,6 +127,23 @@ class ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
           }
         },
         onError: (error, stackTrace) {},
+      );
+
+      final int telegramTdlibClientId = telegramClient.tdlib.td_create_client_id();
+      final TelegramClientLibraryTdlibOptionParameter tdlibOptionParameter = TelegramClientLibraryTdlibOptionParameter.create();
+      tdlibOptionParameter.client_telegram_bot_token = database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_bot_token;
+      tdlibOptionParameter.client_telegram_bot_user_id = database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_bot_user_id;
+      tdlibOptionParameter.client_telegram_owner_user_id = database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_owner_user_id;
+
+      final Directory directoryTdlibClient = Directory(path.join(database.directory_telegram_tdlib.path, "bot_${database.chatbotAiWithSpeechRecognitionDeviceTelegramBotConfiguration.telegram_bot_user_id}"));
+      if (directoryTdlibClient.existsSync() == false) {
+        directoryTdlibClient.createSync(recursive: true);
+      }
+      tdlibOptionParameter.files_directory = directoryTdlibClient.path;
+      tdlibOptionParameter.database_directory = directoryTdlibClient.path;
+      await telegramClient.tdlib.createclient(
+        clientId: telegramTdlibClientId,
+        clientOption: tdlibOptionParameter,
       );
     }
 

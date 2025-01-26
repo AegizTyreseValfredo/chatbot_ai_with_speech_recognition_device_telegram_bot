@@ -5,6 +5,7 @@ import 'dart:io';
 
 import 'package:chatbot_ai_with_speech_recognition_device_telegram_bot/dart/core/core.dart';
 import 'package:chatbot_ai_with_speech_recognition_device_telegram_bot/dart/telegram/extension/tdlib_option.dart';
+import 'package:chatbot_ai_with_speech_recognition_device_telegram_bot/dart/telegram/update/update.dart';
 import 'package:general_lib/general_lib.dart';
 import 'package:general_lib/log/log.dart';
 import 'package:telegram_client/scheme/telegram_client_library_tdlib_option_parameter.dart';
@@ -13,7 +14,7 @@ import "package:path/path.dart" as path;
 
 ///
 extension ChatbotAiWithSpeechRecognitionDeviceTelegramBotTelegramExtension on ChatbotAiWithSpeechRecognitionDeviceTelegramBot {
-  /// 
+  ///
   FutureOr<Map?> telegram_bot_update({
     required UpdateTelegramClient updateTelegramClient,
   }) async {
@@ -28,7 +29,7 @@ extension ChatbotAiWithSpeechRecognitionDeviceTelegramBotTelegramExtension on Ch
 
       if (update == null) {
         return null;
-      }
+      } 
       final TelegramClientLibraryTdlibOptionParameter tdlibOptionParameter = TelegramClientLibraryTdlibOptionParameter(updateTelegramClient.client_option);
 
       if (update["@type"] == "error") {
@@ -192,27 +193,26 @@ extension ChatbotAiWithSpeechRecognitionDeviceTelegramBotTelegramExtension on Ch
               tdlib_client_procces.client_option["client_username"] = get_me_result["username"];
               await telegramClient.tdlib.updateClientById(updateTelegramClient.telegramClientData.tdlib_client_id, newTdlibClient: tdlib_client_procces);
             }
- 
           }
         }
       }
-
-      // if (update["callback_query"] is Map) {
-      //   Map msg = update["callback_query"];
-      //   return await updateCallbackQueryUserbot(
-      //     msg,
-      //     updateTelegramClient: updateTelegramClient,
-      //     clientGeneralBotData: clientGeneralBotData,
-      //   );
-      // }
-      // if (update["message"] is Map) {
-      //   Map msg = update["message"];
-      //   return await updateMsgUserbot(
-      //     msg,
-      //     updateTelegramClient: updateTelegramClient,
-      //     clientGeneralBotData: clientGeneralBotData,
-      //   );
-      // }
+ 
+      if (update["callback_query"] is Map) {
+        Map msg = update["callback_query"];
+        return await telegram_update_callback_query(
+          msg: msg,
+          updateTelegramClient: updateTelegramClient,
+          tdlibOptionParameter: tdlibOptionParameter,
+        );
+      }
+      if (update["message"] is Map) {
+        Map msg = update["message"];
+        return await telegram_update_message(
+          msg: msg,
+          updateTelegramClient: updateTelegramClient,
+          tdlibOptionParameter: tdlibOptionParameter,
+        );
+      }
     } catch (e, stack) {
       database.generalLibraryLog.printToTerminal(
         logMessage: GeneralLibraryLogMessage(
