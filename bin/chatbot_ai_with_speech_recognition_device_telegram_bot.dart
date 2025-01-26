@@ -33,5 +33,6 @@ Bukan maksud kami menipu itu karena harga yang sudah di kalkulasi + bantuan tiba
 
 void main(List<String> arguments) {
   print('Hello world:');
+  // git submodule update --recursive --remote --force
 }
 

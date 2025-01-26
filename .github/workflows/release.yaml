@@ -5,8 +5,9 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/release.yaml'
-      - 'release'
+      - '.github/workflows/release.yaml' 
+      - 'release/clis/chatbot_ai_with_speech_recognition_device_telegram_bot_cli/linux/packagex/usr/lib/libtdjson.so'
+      - 'release/clis/chatbot_ai_with_speech_recognition_device_telegram_bot_cli/linux/packagex/usr/lib/libwhisper.so'
       
 jobs: 
   cli-build:
